@@ -10,8 +10,7 @@
   <link rel="icon" type="image/x-icon" href="./resources/img/favicon.ico" >
   <!-- estilos -->
   <link rel="stylesheet" href="resources/css/styles.css">
-
-
+  <!-- Titulo -->
   <title> Slay The Spyre </title>
 
 
@@ -23,51 +22,99 @@
 
 <!-- <a name="top"></a> -->
 
-<!-- Barra superior -->
-<nav class="navbar">
-  <table class="menu-bar">
-    <tr>
-      <td><a href="index.html"><img width="20%" height="20%" src="resources/img/slay_the_spire_logo.png"></a></td>
-      <td><a href="resources/paginas/personajes.html">Personajes</a></td>
-      <td><a href="resources/paginas/cartas.html">Cartas</a></td>
-      <td><a href="resources/paginas/objetos.html">Objetos</a></td>
-      <td><a href="resources/paginas/bosses.html">Bosses</a></td>
-      <td><a href="resources/paginas/eventos.html">Eventos</a></td>
-    </tr>
-  </table>
-</nav>
+
 
 
 
 <!-- Imagen de cabecera -->
-<div ><img class="img" src="resources/img/H2x1_NSwitchDS_SlayTheSpire_image1600w.jpg"></div>
+<div style="padding-top: 120px;"><img class="img" src="resources/img/H2x1_NSwitchDS_SlayTheSpire_image1600w.jpg"></div>
 
 
 <!-- Introduccion -->
-<div width="100%" style="background-color: black; padding-bottom: 100px;">
-  <div class="text" style="margin-top: 250px;">
-    <div>
-      <h1 style="margin-top: 50px;"> Introduccion </h1>
+<div width="100%" style="background-color: black; padding-bottom: 120px; padding-top: 120px; margin-bottom: 350px; margin-top: 300px;">
+  <!-- <div> -->
+    <div class="introduccion">
+        <div class="text" style="background-image: url(./resources/img/backgrounds/white_background1.jpg); opacity: 0.5; background-repeat: no-repeat; background-size:cover;">
+        <!-- /* <img class="img" src="" style="opacity: 0.4;"> */ -->
+        <div class="text">
+          <h1 style="color: black;"> Introducción </h1>
+        </div>
+        <div class="text">
+          <p style="opacity: 2; color: black;">
+            Elige a tu personaje y asciende "La Torre" de Slay The Spire, derrotando enemigos, mini jefes y jefes finales.<br>
+            Crea y mejora mazos únicos en cada partida con las cartas que obtienes por tus victorias y combinalas
+            con los efectos de las reliquias y pociones para crear poderosas sinergias y llegar a lo mas alto, pero cuidado,
+            si te quedas sin puntos de vida, tendrás que volver a empezar desde el principio.
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Trailer -->
+<div style="width: 100%; background-color: black;">
+  <video controls loop muted autoplay style="margin-top: 250px;">
+    <source src="resources/video/Slay the Spire - Trailer.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- Nominaciones -->
+  <div class="nominations-container">
+    <div style="font-size: 60px;">
+      Nominaciones
+    </div>
+    <div >
+      <h3> 2019 </h3>
+      <!-- 1 -->
+      <div class="nominators">2019 Golden Joystick Awards</div>
+      <div class="nominations">Best Indie Game</div>
+      <div class="nominations">PC Game of the Year</div>
+
+      <!-- 2 -->
+      <div class="nominators">The Game Awards 2019</div>
+      <div class="nominations">Fresh Indie Game (Mega Crit)</div>
+
+      <!-- 3 -->
+      <div class=" nominators">Steam Awards</div>
+      <div class="nominations">Most Innovative Gameplay</div>
     </div>
     <div>
-      <p>
-        Elige a tu personaje y asciende La Torre de Slay The Spire derrotando enemigos, mini jefes y jefes finales.<br>
-        Crea y mejora mazos únicos en cada partida con las cartas que obtienes por tus victorias y combinalas
-        con los efectos de las reliquias y pociones para crear poderosas sinergias y llegar a lo mas alto, pero cuidado,
-        si te quedas sin puntos de vida, tendrás que volver a empezar desde lo mas bajo.
-      </p>
+      <h3> 2020 </h3>
+      <!-- 4 -->
+      <div class=" nominators">23rd Annual D.I.C.E Awards</div>
+      <div class="nominations">Strategy/Simulation Game of the Year</div>
+      <div class="nominations">Outstanding Achievement in Game Design</div>
+
+      <!-- 5 -->
+      <div class=" nominators">NAVGTR Awards</div>
+      <div class="nominations">Engineering</div>
+
+      <!-- 6 -->
+      <div class=" nominators">Independent Games Festival Awards</div>
+      <div class="nominations">Seumas McNally Grand Prize</div>
+      <div class="nominations">Excellence in Design</div>
+
+      <!-- 7 -->
+      <div class=" nominators">18th Annual G.A.N.G Awards</div>
+      <div class="nominations">Best Music for an Indie Game</div>
+
     </div>
   </div>
+
+
+
+
+
+
+
+<!-- Board Game info-->
+<div>
+
 </div>
 
 
 
-<video controls loop muted autoplay style="margin-top: 250px;">
-  <source src="resources/video/Slay the Spire - Trailer.mp4" type="video/mp4">
-</video>
-
-
- <!-- buscar paralax demo en w3 school -->
+<!-- buscar paralax demo en w3 school -->
 
 
 
@@ -83,64 +130,80 @@
 
 
 <!-- Boton para abrir menu lateral-->
-<div id="button">
+<!-- <div id="button">
   <button onclick="toggleMenu()">|||</button>
-</div>
+</div> -->
 
-<div id="menu">
-
+<!-- <div id="menu"> -->
   <!-- Contenido del menú -->
-  <div id="button">
+  <!-- <div id="button">
     <button  onclick="toggleMenu()">|||</button>
-  </div>
+  </div> -->
 
   <!-- Boton para subir (con imagen)-->
-  <div align="left">
+  <!-- <div align="left">
     <a href="#top"> <img src="" alt="subir"></a>
-  </div>
+  </div> -->
 
   <!-- audio de fondo para la página -->
-  <audio loop autoplay volume="0.5">
+  <!-- <audio loop autoplay volume="0.5">
     <source src="resources/audio/Slay the Spire OST.mp3" type="audio/mp3">
-  </audio>
+  </audio> -->
+<!-- </div>  -->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Imagen de promoción -->
+<div class="promocion">
+  <div style="width: 50%;"><img class="img" src="resources/img/promo.jpg"></div>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<div>
-</div>
-
+<div style="width: 100%; height: 1px; background-color: white;"></div>
 <footer>
-  <div >
-    <h3>Sobre Nosotros</h3>
-      <p></p>
+
+  <div class="about">
+    <h3>Sobre Mi</h3>
+      <p><a href="./resources/paginas/formulario.html">contactar</a> </p>
   </div>
   
-  <div>
+  <div class="contact">
     <h3>Contacto</h3>
       <ul>
-        <li> +34 605 574 883</li>
+        <li><a href="./resources/paginas/politica.html"> Politica de privacidad</a></li>
+        <li> </li>
         <li> jimenezmu@esat-alumni.com</li>
-        <li> Calle Viciana 5, Valencia, España</li>
       </ul>
   </div>
   
-  <div>
+  <div class="social">
     <h3>Redes</h3>
       <ul>
-        <li><a href="#">twitter</i></a></li>
-        <li><a href="#">instagram</a></li>
+        <li><a href="#"></i></a></li>
+        <li><a href="#"></a></li>
       </ul>
   </div>
 
-  <div style="text-align: center; margin-top: 20px;">
+  <div class="copy">
     &copy; 2023 
   </div>
 </footer>
 
-<script src="proyecto.js"></script>
+<!-- Barra superior -->
+<nav class="navbar">
+  <table class="menu-bar">
+    <tr class="menu-tr">
+      <td><a href="index.html"><img width="25%" height="25%" src="resources/img/slay_the_spire_logo3.png"></a></td>
+      <td><a href="resources/paginas/personajes.html">Personajes</a></td>
+      <td><a href="resources/paginas/cartas.html">Cartas</a></td>
+      <td><a href="resources/paginas/objetos.html">Objetos</a></td>
+      <td><a href="resources/paginas/bosses.html">Bosses</a></td>
+      <td><a href="resources/paginas/eventos.html">Eventos</a></td>
+    </tr>
+  </table>
+</nav>
 
 </body>
+<script src="proyecto.js"></script>
 </html>
