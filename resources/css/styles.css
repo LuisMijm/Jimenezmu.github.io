@@ -143,15 +143,33 @@
     background-size: cover;
   }
 
+  .introduccion-container {
+    width: 100%; 
+    background-color: black;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 350px;
+    margin-top: 300px;
+    align-items: center;
+  }
+
   .introduccion {
+    width: 80%;
     position: relative; 
-    background-image: url(../img/backgrounds/white_background1.jpg);
-    background-image: url(../img/ruby.png);
+    background-image: url(../img/characters/characters_black_portrait.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 1100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
+    margin: auto;
+  }
+
+  .introduccion-imagen {
+    background-image: url(../img/backgrounds/white_background3.jpg);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .promocion {
@@ -233,7 +251,15 @@
     box-sizing: border-box;
     margin-top: 350px;
     padding-top: 50px;
-    padding-bottom: 60px;
+  }
+
+  .nominations-background {
+    background-image: url(../img/backgrounds/backgound_fire2.jpg);
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom: 80px;
+    /* margin: auto; */
   }
 
   .nominations-container > *{
@@ -251,6 +277,10 @@
     
     width: auto;
     margin-top: 20px;
+  }
+
+  .links-container {
+    width: 100%;
   }
 
     /*Movil*/
