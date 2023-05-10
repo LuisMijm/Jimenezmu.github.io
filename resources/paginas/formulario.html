@@ -47,17 +47,49 @@
     input[type="submit"]:hover {
         background-color: #45a049;
     }
+
+    .form-div{
+        width: 100%; 
+        background-color: black; 
+        color: white; 
+        margin-top: 70px; 
+        padding-bottom: 100px; 
+        text-align: center; 
+        align-items: center;
+        /* display: block; */
+        justify-content: center;
+    }
+
+    .form-table {
+        padding-top: 20px; 
+        width: 75%; 
+        /* display:inline-block;  */
+        /* margin-left: 15%;  */
+        margin-left: 12.5%;
+        background-color:khaki; 
+        border-radius: 10px; 
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    
 </style>
 </head>
     
 <body>
-    <div style="width: 100%; background-color: black; color: white; margin-top: 70px; padding-bottom: 100px; text-align: center; align-items: center;">
+    <div class="form-div">
         <div style="padding-top: 100px;">
             <h1>Formulario de comentarios</h1>
+            <p>Por favor, no dudes en enviar tus comentarios, ideas y preguntas mediante este formulario</p>
         </div>
-        <div style="padding-top: 20px; width: 30%; display:inline-block; margin-left: auto; background-color:khaki; border-radius: 10px; color: black;">
-            <form action="#" method="post">
-                <table style="width:auto;">
+        <div class="form-table"">
+            <form action="mailto:jimenezmu@esat-alumni.com" method="post">
+                <table>
                     <tr>
                         <td> Nombre </td>
                         <td><input type="text" size="40" name="nombre" required></td>
@@ -69,7 +101,7 @@
                     </tr>
 
                     <tr>
-                        <td> <textarea name="Comentarios" id="comentarios" rows="10" cols="70"  required>Comentarios</textarea></td>
+                        <td> <textarea name="Comentarios" id="comentarios" rows="10" cols="70"  required></textarea></td>
                         <td><input type="submit" value="enviar"></td>
                     </tr>
                 </table>

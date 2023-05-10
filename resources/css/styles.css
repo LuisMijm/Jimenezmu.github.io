@@ -27,7 +27,8 @@
 
   body{
     /* background-color: #44424f; */
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: black;
     font-family: verdana;
     /* background-position: center; */
     /* background-image: url("resources/img/H2x1_NSwitchDS_SlayTheSpire_image1600w.jpg"); */
@@ -39,6 +40,15 @@
 
   .img{
     width: 100%;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1000;
+    width: 100%;
+    /* height: auto; */
+    opacity: 0.5;
   }
 
   video {
@@ -145,32 +155,99 @@
 
   .introduccion-container {
     width: 100%; 
+    height: auto;
     background-color: black;
-    padding-bottom: 0px;
     padding-top: 0px;
+    padding-bottom: 40px;
     margin-bottom: 350px;
     margin-top: 300px;
     align-items: center;
+    /* background-image: url(../img/characters/characters_black_portrait.png); */
+    background-repeat: no-repeat;
+    /* background-position: 50%; */
+    background-size: 1100px;
   }
 
   .introduccion {
-    width: 80%;
+    width: 100%;
     position: relative; 
-    background-image: url(../img/characters/characters_black_portrait.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 1100px;
     /* padding-top: 100px; */
     /* padding-bottom: 100px; */
     margin: auto;
   }
 
   .introduccion-imagen {
-    background-image: url(../img/backgrounds/white_background3.jpg);
+    /* background-image: url(../img/backgrounds/white_background3.jpg); */
     opacity: 0.5;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
   }
+
+  
+  .links-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    /* justify-content: space-between; */
+    justify-content: center;
+    background-color: black;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-bottom: 200px;
+  }
+
+  .links-name {
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+
+  .links-between {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 3%;
+  }
+
+  .links-item {
+    width: 30%;
+    /* width:fit-content; */
+    height: auto;
+    /* background-color: ; */
+    /* border: 5px solid purple; */
+    background-color: #333;
+    /* min-width: %; */
+    margin: 10px;
+    padding-bottom: 3%;
+    text-align: center;
+  }
+
+  .links-img {
+    width: 75%;
+    transition: transform 0.8s ease;
+    /* transform-style: preserve-3d; */
+  }
+
+  .links-img:hover {
+    /* transform: rotateY(180deg); */
+    transform: perspective(500px) rotateY(180deg);
+    /* opacity: 0.5; */
+  }
+
+  .links-item::after {
+    position: absolute;
+    background-color: white;
+    transition: opacity 0.3s ease;
+    /* opacity: 0.5; */
+  }
+
+  .links-item:hover::after {
+    opacity: 0.5;
+  }
+
+
 
   .promocion {
     width: 100%; 
@@ -180,7 +257,8 @@
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    /* opacity: 0.9; */
   }
 
   footer{
@@ -190,6 +268,7 @@
     padding: 20px;
     /* display: flex; */
     text-decoration: none;
+    width: 100%;
   }
 
   footer > div {
@@ -210,7 +289,7 @@
     position: relative;
     /* display: grid; */
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     justify-content: center;
@@ -244,20 +323,22 @@
 
   .nominations-container {
     background-color: black;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     color: white;
     box-sizing: border-box;
     margin-top: 350px;
     padding-top: 50px;
+    background-image: url(../img/backgrounds/backgound_fire9.jpg);
+    background-size:84%;
+    background-position:bottom;
+    /* background-position-y: 200px; */
+    background-repeat: no-repeat;
   }
 
   .nominations-background {
-    background-image: url(../img/backgrounds/backgound_fire2.jpg);
     opacity: 0.5;
-    background-repeat: no-repeat;
-    background-size:cover;
     padding-bottom: 80px;
     /* margin: auto; */
   }
@@ -279,9 +360,6 @@
     margin-top: 20px;
   }
 
-  .links-container {
-    width: 100%;
-  }
 
     /*Movil*/
   @media (max-width:480px){

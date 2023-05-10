@@ -13,7 +13,23 @@
   <!-- Titulo -->
   <title> Slay The Spyre </title>
 
-
+  <style>
+    body {
+      position: -webkit-sticky;
+      position: sticky;
+      /* top: 1000; */
+      /* width: 100%; */
+      height: 100%;
+      /* height: auto; */
+      /* opacity: 0.9; */
+      background-color: black;
+      background-image: url(./resources/img/characters/characters_background.webp);
+      background-repeat: no-repeat;
+      background-size:contain;
+      background-position: center;
+      background-attachment: fixed;
+  }
+  </style>
 </head>
 
 
@@ -27,18 +43,20 @@
 
 
 <!-- Imagen de cabecera -->
-<div style="padding-top: 120px;"><img class="img" src="resources/img/H2x1_NSwitchDS_SlayTheSpire_image1600w.jpg"></div>
+<div style="padding-top: 5%;"><img class=" img" src="resources/img/H2x1_NSwitchDS_SlayTheSpire_image1600w.jpg"></div>
 
+<!-- Imagen sticky    -->
+<!-- <img class="sticky" src="./resources/img/characters/characters_black_portrait.png"> -->
 
 <!-- Introduccion -->
 <div class="introduccion-container">
     <div class="introduccion">
         <div class="introduccion-imagen">
             <div class="text">
-              <h1 style="color: black;"> Introducción </h1>
+              <h1> Introducción </h1>
             </div>
             <div class="text">
-              <p style="opacity: 2; color: black;">
+              <p>
                 Elige a tu personaje y asciende "La Torre" de Slay The Spire, derrotando enemigos, mini jefes y jefes finales.<br>
                 Crea y mejora mazos únicos en cada partida con las cartas que obtienes por tus victorias y combinalas
                 con los efectos de las reliquias y pociones para crear poderosas sinergias y llegar a lo mas alto, pero cuidado,
@@ -151,14 +169,44 @@
   </audio> -->
 <!-- </div>  -->
 
+
+
 <!-- enlaces a otros lugares del sitio -->
-<div>
-  <div style="position: relative; display: flex; flex-direction: row; flex-wrap: wrap; grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); justify-content: center;">
-      <div> <a href="resources/paginas/personajes.html"><img src="./resources/img/ruby.png" style="width: auto;"></a> </div>
-      <div> <a href="resources/paginas/cartas.html"><img src="./resources/img/Apotheosis_slay_the_spire.webp" style="width: auto;"></a> </div>
-      <div> <a href="resources/paginas/objetos.html"><img src="./resources/img/RingoftheSnake_slay_the_spire.webp" style="width: auto;"></a> </div>
-      <div> <a href="resources/paginas/bosses.html"><img src="./resources/img/Gremlin-nob-slay_the_spire.webp" style="width: auto;"></a> </div>
-      <div> <a href="resources/paginas/eventos.html"><img src="./resources/img/Moai_Head_slay_the_spire.webp" style="width: auto;"></a> </div>
+<div style="width:100%; background-color: black;">
+  <div style="margin-top: 350px; width: 80%; margin-left: 9.5%;">
+    <div class="links-container">
+
+      <div class="links-item"> <a href="resources/paginas/personajes.html"> 
+        <div class="links-name"> Personajes </div> 
+        <div class="links-between"></div>
+        <img src="./resources/img/ruby.png" class="links-img" style="margin-top: 12.5%;">  </a> 
+      </div>
+
+      <div class="links-item"> <a href="resources/paginas/cartas.html">
+        <div class="links-name"> Cartas </div>
+        <div class="links-between"></div>
+        <img src="./resources/img/Apotheosis_slay_the_spire.webp" class="links-img" "></a> 
+      </div>
+
+      <div class="links-item"> <a href="resources/paginas/objetos.html">
+        <div class="links-name"> Objetos </div>
+        <div class="links-between"></div>
+        <img src="./resources/img/RingoftheSnake_slay_the_spire.webp" class="links-img" style="margin-top: 5%;"></a> 
+      </div>
+
+      <div class="links-item"> <a href="resources/paginas/bosses.html">
+        <div class="links-name"> Bosses </div>
+        <div class="links-between"></div>
+        <img src="./resources/img/Gremlin-nob-slay_the_spire.webp" class="links-img"></a> 
+      </div>
+
+      <div class="links-item"> <a href="resources/paginas/eventos.html">
+        <div class="links-name"> Eventos </div>
+        <div class="links-between"></div>
+        <img src="./resources/img/Moai_Head_slay_the_spire.webp" class="links-img" style="width: 65%; margin-top: 4%;"></a> 
+      </div>
+    
+    </div>
   </div>
 </div>
 
@@ -166,27 +214,27 @@
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
 
 <!-- Imagen de promoción -->
 <div class="promocion">
-  <div style="width: 50%;"><img class="img" src="resources/img/promo.jpg"></div>
+  <div><img style="width: 100%;" class="img" src="resources/img/promo.jpg"></div>
 </div>
 
 <div style="width: 100%; height: 1px; background-color: white;"></div>
-<footer>
 
+<footer>
   <div class="about">
     <h3>Sobre Mi</h3>
-      <p><a href="./resources/paginas/formulario.html">contactar</a> </p>
   </div>
   
-  <div class="contact">
+  <div>
     <h3>Contacto</h3>
       <ul>
+        <li><a href="./resources/paginas/formulario.html">contactar</a> </li>
         <li><a href="./resources/paginas/politica.html"> Politica de privacidad</a></li>
-        <li> </li>
-        <li> jimenezmu@esat-alumni.com</li>
+        <li>jimenezmu@esat-alumni.com</li>
       </ul>
   </div>
   
@@ -216,7 +264,6 @@
     </tr>
   </table>
 </nav>
-
 </body>
 <script src="proyecto.js"></script>
 </html>

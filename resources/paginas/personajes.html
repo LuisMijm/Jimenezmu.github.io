@@ -14,7 +14,111 @@
     <!-- Titulo -->
     <title> Personajes | Slay The Spyre </title>
 
+    <style>
 
+
+
+        div.container0 {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            flex-wrap:nowrap;
+            top: 100px;
+            /* grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); */
+            /* height:fit-content; */
+            /* border: 2px solid white; */
+            height: 100%;
+        }
+
+        div.container1 {
+            display:flex;
+            width: 100%;
+            height:auto;
+            color: black;
+            text-align: center;
+            position: relative;
+            border-top: 10px solid black;
+            border-bottom: 10px solid black;
+            /* border-spacing: 0px 10px; */
+        }
+
+        div.container2-left {
+            float: left;
+            width: 30%;
+            position:relative;
+            /* height:max-content; */
+            /* display: inline-block; */
+            /* border: 2px solid white; */
+            /* background-color: white; */
+            background-color: #CFA53C;
+
+            /* align-items: baseline; */
+            /* justify-content: baseline; */
+            /* height: 25%; */
+            color: black;
+            padding-bottom: 3%;
+        }
+
+        div.container2-right {
+            float: right;
+            background-color: #CFA53C;
+            color: black;
+            padding-bottom: 3%;
+            
+            width: 30%;
+            /* height: auto; */
+
+        }
+        div.container3 {
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .character-portrait-left {
+            border-radius: 10px;
+            /* display: inline-block; */
+            /* vertical-align: middle; */
+            /* border: 2px solid white; */
+            width: 80%;
+            height: auto;
+        }
+
+        .character-portrait-right {
+            border-radius: 10px;
+            width: 80%;
+            height: auto;
+            transform: rotateY(180deg);
+
+        }
+        
+
+        .character-info-right {
+            display:flex;
+            float:right;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            color: black;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            display:flexbox;
+        }
+
+        .character-info-left {
+            display:flex;
+            float:left;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            color: black;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            display:flexbox;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,53 +126,90 @@
 
 
 
-    <div class="character-container">
-        <div class="character-item" id="character1" onclick="DisplaySideInfo()">
-            <div >
-                <img class="img" src="../img/characters/Ironclad.webp">
+    <div class="container0">
+        <div class="container1">
+            <div class="container2-left">
+                <div style="margin-top: 40px; margin-bottom: 40px;">
+                    The guardian
+                </div>
+                <div class="container3">
+                    <img class="character-portrait-left" src="../img/characters/Ironclad.webp">
+                </div>
             </div>
-            <div style="margin-top: 40px;">
-                The guardian
-            </div>
-            <div id="info">
-                asdfasdfasdfasdfasdfasdf
+
+            <div class="character-info-right">
+                <div style="align-items: center; display: flex; justify-content: center;">
+                    asdlfjasdlkfjasdljfl    
+                </div>
             </div>
         </div>
 
-        <div class="character-item" id="character2" onclick="DisplaySideInfo()">
-            <div>
-                <img src="../img/characters/Silent.webp">
-            </div>
-            <div style="margin-top: 40px;">
-                Hexaghost
+        <div class="container1">
+            <div class="character-info-left"></div>
+            <div class="container2-right">
+                <div style="margin-top: 40px; margin-bottom: 40px;">
+                    Silent
+                </div>
+
+                <div class="container3">
+                    <img class="character-portrait-right" src="../img/characters/Silent.webp">
+                </div>
             </div>
         </div>
 
-        <div class="character-item" id="character3">
-            <div>
-                <img src="../img/characters/Defect.webp">  
+        <div class="container1">
+            <div class="container2-left">
+                <div style="margin-top: 40px; margin-bottom: 40px;">
+                    Defect
+                </div>
+                <div class="container3">
+                    <img class="character-portrait-left" src="../img/characters/Defect.webp">  
+                </div>
             </div>
-            <div style="margin-top: 40px;">
-                Defect
-            </div>
-            <div id="info">
-
-            </div>
+            <div class="character-info-right"></div>
         </div>
-        <div class="character-item" id="character4">
-            <div>
-                <img src="../img/characters/Watcher.webp"> 
-            </div>
-            <div style="margin-top: 40px;">
-                Watcher
+
+        <div class="container1">
+            <div class="character-info-left"></div>
+            <div class="container2-right">
+                <div style="margin-top: 40px; margin-bottom: 40px;">
+                    Watcher
+                </div>
+                <div class="container3">
+                    <img class="character-portrait-right" src="../img/characters/Watcher.webp">
+                </div>
             </div>
         </div>
     </div>
 
-    
-    <!-- <div id="info">
-        asdfasdfasdfasdfasdfasdf
-    </div> -->
+<div style="width: 100%; height: 1px; background-color: white;"></div>
+
+<footer>
+    <div class="about">
+        <h3>Sobre Mi</h3>
+    </div>
+
+    <div>
+        <h3>Contacto</h3>
+        <ul>
+            <li><a href="./resources/paginas/formulario.html">contactar</a> </li>
+            <li><a href="./resources/paginas/politica.html"> Politica de privacidad</a></li>
+            <li>jimenezmu@esat-alumni.com</li>
+        </ul>
+    </div>
+
+    <div class="social">
+        <h3>Redes</h3>
+        <ul>
+            <li><a href="#"></i></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </div>
+
+    <div class="copy">
+        &copy; 2023
+    </div>
+</footer>
 
    <!-- Barra superior -->
     <nav class="navbar">
