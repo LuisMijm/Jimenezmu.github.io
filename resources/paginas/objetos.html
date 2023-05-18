@@ -13,16 +13,418 @@
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Titulo -->
     <title> Objetos | Slay The Spyre </title>
+
+    <style>
+        
+        .contenedor-reliquia {
+            width: 60%;
+            margin-left: 20%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            margin-top: 15%;
+            margin-bottom: 15%;
+            /* border: 1px solid white; */
+            align-items: center;
+            text-align: center;
+            background-color: #262121;
+            border-radius: 20px;
+
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .column {
+            flex: 100%;
+            padding: 0 4px;
+        }
+
+        .reliquia {
+            position: relative;
+            display: inline-block;
+            color: white;
+            /* border: 1px solid white; */
+            background-color: black;
+            border-radius: 20px;
+            padding: 0.5%;
+            margin: 1%;
+        }
+        
+        .reliquia .reliquia-texto {
+            visibility: hidden;
+            width: 500%;
+            background-color: #213136;
+            border: 1px solid #426061;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 20px;
+
+            position: absolute;
+            z-index: 1;
+            bottom: -400%;
+            left: -110%;
+            margin-left: -60px;
+
+            opacity: 0;
+            transition: opacity 0.3s;
+
+        }
+
+        .reliquia:hover .reliquia-texto {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
 </head>
 
 <body>
 
+    <div class="contenedor-reliquia">
+        <div class="row">
+            <div class="column">
+                <div class="reliquia">
+                    <img src="../img/reliquias/akabeko.webp" alt="akabeko">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/akabeko.webp" alt="akabeko"><br>
+                        <strong>Akabeko</strong><br><br>
+                        El primer ataque en cada combate hace 8 de daño adicional. <br><br>
+                        <em>Muuu~</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/Anchor.webp" alt="Anchor">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Anchor.webp" alt="Anchor"><br>
+                        <strong>Anchor</strong><br><br>
+                        Comienza cada combate con 10 de bloqueo <br><br>
+                        <em>Sosteniendo este tesoro en miniatura te sientes mas pesado y estable.</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/AncientTeaSet.webp" alt="Ancient Tea Set">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/AncientTeaSet.webp" alt="AncientTeaSet"><br>
+                        <strong>Ancient Tea Set</strong><br><br>
+                        <br>Al entrar en una zona de descanso, el proximo combate comenzarás con 2 energías extra.<br><br>
+                        <em>La clave para una refrescante noche de descanso</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/ArtofWar.webp" alt="ArtofWar">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/ArtofWar.webp" alt="ArtofWar"><br>
+                        <strong>Art of War</strong><br><br>
+                        <br>Si no juegas un ataque durante tu turno, gana una energia extra el siguiente turno.<br><br>
+                        <em>Este antiguo manuscrito contiene sabiduría de una época pasada.</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/BagofMarbles.webp" alt="BagofMarbles">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/BagofMarbles.webp" alt="BagofMarbles"><br>
+                        <strong>Bag of Marbles</strong><br><br>
+                        <br>Al comienzo de cada combate aplica 1 vulnerable a todos los enemigos.<br><br>
+                        <em>Un juguete una vez popular en las ciudades. Util para hacer resbalar a tus enemigos.</em>
+                        <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/BagofPreparation.webp" alt="BagofPreparation">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/BagofPreparation.webp" alt="BagofPreparation"><br>
+                        <strong>Bag of Preparation</strong><br><br>
+                        <br>Al comienzo de cada combate roba 2 cartas adicionales.<br><br>
+                        <em>Paquete de aventurero de gran tamaño. Tiene muchos bolsillos y correas.</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/BloodVial.webp" alt="BloodVial">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/BloodVial.webp" alt="BloodVial"><br>
+                        <strong>Blood Vial</strong><br><br>
+                        <br>Al comienzo de cada combate, cura 2 hp<br><br>
+                        <em>Un vial que contiene la sangre de un puro y anciano vampiro.</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/BronzeScales.webp" alt="BronzeScales">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/BronzeScales.webp" alt="BronzeScales"><br>
+                        <strong>Bronze Scales</strong><br><br>
+                        <br>Cuando recibas daño, haz 3 de daño de vuelta.<br><br>
+                        <em>Las escamas afiladas del Guardián. Se reorganizan para proteger a su usuario.</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/CentennialPuzzle.webp" alt="CentennialPuzzle">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/CentennialPuzzle.webp" alt="CentennialPuzzle"><br>
+                        <strong>Centennial Puzzle</strong><br><br>
+                        <br>La primera vez que pierdas hp cada combate, roba 3 cartas.<br><br>
+                        <em>Al resolver el rompecabezas sientes una poderosa calidez en tu pecho.</em><br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/CeramicFish.webp" alt="CeramicFish">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/CeramicFish.webp" alt="CeramicFish"><br>
+                        <strong>Ceramic Fish</strong><br><br>
+                        <br>Cada vez que añades una carta a tu mazo, gana 9 de oro.<br><br>
+                        <em>Pintado meticulosamente, estos peces fueron venerados para atraer grandes fortunas</em> <br><br>
+                    </span>
+                </div>
+    
+                <div class="reliquia">
+                    <img src="../img/reliquias/DreamCatcher.webp" alt="DreamCatcher">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/DreamCatcher.webp" alt="DreamCatcher"><br><br>
+                        <strong>Dream Catcher</strong><br><br>
+                        <br>Cada vez que descanses, puedes añadir una carta a tu mazo.<br><br>
+                        <em>Las tribus del norte solían utilizar atrapa sueños durante la noche, creyendo que eran el camino a la superación personal</em><br><br>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="reliquia">
+                    <img src="../img/reliquias/HappyFlower.webp" alt="HappyFlower">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/HappyFlower.webp" alt="HappyFlower"><br><br>
+                        <strong>Happy Flower</strong><br><br>
+                        <br>Cada 3 turnos obtienes 1 de energía.<br><br>
+                        <em>Esta incesantemente jubilosa planta es un item nobiliario muy popular entre los nobles.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/JuzuBracelet.webp" alt="JuzuBracelet">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/JuzuBracelet.webp" alt="JuzuBracelet"><br><br>
+                        <strong>Juzu Bracelet</strong><br><br>
+                        <br>Ya no se pueden encontrar combates contra enemigos normales en habitaciones "?".<br><br>
+                        <em>Una protección contra lo desconocido.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Lantern.webp" alt="Lantern">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Lantern.webp" alt="Lantern"><br><br>
+                        <strong>Lantern</strong><br><br>
+                        <br>Gana 1 de energía el primer turno de cada combate.<br><br>
+                        <em>Una linterna misteriosa que ilumina solo para su portador.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/MawBank.webp" alt="MawBank">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/MawBank.webp" alt="MawBank"><br><br>
+                        <strong>Maw Bank</strong><br><br>
+                        <br>Cada vez que asciendas un piso, gana 12 de oro. Deja de funcionar cuando gastas dinero en la tienda.<br><br>
+                        <em>Sorprendentemente puplar, a pesar de que los ataques de maw son frecuentes.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/MealTicket.webp" alt="MealTicket">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/MealTicket.webp" alt="MealTicket"><br><br>
+                        <strong>Meal Ticket</strong><br><br>
+                        <br>Cada vez que entras en una tienda, cura 15 hp.<br><br>
+                        <em>¡Ración de albondigas con cada visita!.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Nunchaku.webp" alt="Nunchaku">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Nunchaku.webp" alt="Nunchaku"><br><br>
+                        <strong>Nunchaku</strong><br><br>
+                        <br>Cada vez que juegues 10 ataques, gana 1 de energía<br><br>
+                        <em>Una buena herramienta de entramiento. mejora la postura y la agilidad de quien la usa.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/OddlySmoothStone.webp" alt="OddlySmoothStone">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/OddlySmoothStone.webp" alt="OddlySmoothStone"><br><br>
+                        <strong>Oddly Smooth Stone</strong><br><br>
+                        <br>Al comienzo de cada combate, gana 1 de destreza.<br><br>
+                        <em>Nunca jamás has visto nada tan suave y pristino. Esto debe ser un trabajo de los ancianos.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Omamori.webp" alt="Omamori">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Omamori.webp" alt="Omamori"><br><br>
+                        <strong>Omamori</strong><br><br>
+                        <br>Niega las 2 proximas maldiciones que recibas<br><br>
+                        <em>Un encantamiento común para espantar espíritus. Este parece poseer una chispa de energía divina</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Orichalcum.webp" alt="Orichalcum">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Orichalcum.webp" alt="Orichalcum"><br><br>
+                        <strong>Orichalcum</strong><br><br>
+                        <br>Si terminas tu turno sin bloqueo, gana 6 de bloqueo.<br><br>
+                        <em>Un metal tintado de verde de origen desconocido. Parece indestructible.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/PenNib.webp" alt="PenNib">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/PenNib.webp" alt="PenNib"><br><br>
+                        <strong>Pen Nib</strong><br><br>
+                        <br>El decimo ataque que juegues hace daño doble.<br><br>
+                        <em>Si sujetas la punta puedes ver a todos los que fueron asesinados por anteriores propietarios de la pluma. Una historia violenta.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/PotionBelt.webp" alt="PotionBelt">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/PotionBelt.webp" alt="PotionBelt"><br><br>
+                        <strong>Potion Belt</strong><br><br>
+                        <br>Al recogerla obtienes 2 ranuras de poción.<br><br>
+                        <em>¡Puedo llevar mas pociones usando este cinturón!</em><br><br>
+                    </span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="reliquia">
+                    <img src="../img/reliquias/PreservedInsect.webp" alt="PreservedInsect">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/PreservedInsect.webp" alt="PreservedInsect"><br><br>
+                        <strong>Preserved Insect</strong><br><br>
+                        <br>Los enemigos de elite tienen 25% menos hp.<br><br>
+                        <em>El insecto parece crear un aura de encogimiento que tiene como objetivo enemigos particularmente grandes.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/RegalPillow.webp" alt="RegalPillow">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/RegalPillow.webp" alt="RegalPillow"><br><br>
+                        <strong>Regal Pillow</strong><br><br>
+                        <br>Cura 15 hp más cuando descansas.<br><br>
+                        <em>Ahora puedes tener un noche de descanso apropiada.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/SmilingMask.webp" alt="SmilingMask">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/SmilingMask.webp" alt="SmilingMask"><br><br>
+                        <strong>Smiling Mask</strong><br><br>
+                        <br>Eliminar cartas con el mercader ahora siempre cuesta 50 de oro.<br><br>
+                        <em>Es la mascara que utiliza el mercader. Debe tener de sobra...</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Strawberry.webp" alt="Strawberry">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Strawberry.webp" alt="Strawberry"><br><br>
+                        <strong>Strawberry</strong><br><br>
+                        <br>Incrementa tu vida máxima en 7 hp.<br><br>
+                        <em>"Delicioso, no he visto ninguna de estas desde la plaga." - <br>Ranwid</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Boot.webp" alt="Boot">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Boot.webp" alt="Boot"><br><br>
+                        <strong>The Boot</strong><br><br>
+                        <br>Cuando fueras a hacer 4 o menos de daño inbloqueable, haces 5 de daño.<br><br>
+                        <em>Cuando se le da cuerda, la bota crece de tamaño.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/TinyChest.webp" alt="TinyChest">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/TinyChest.webp" alt="TinyChest"><br><br>
+                        <strong>Tiny Chest</strong><br><br>
+                        <br>Cada cuarta habitacion "?" que encuentres contendrá un tesoro.<br><br>
+                        <em>"Un buen prototipo."- <br>El Arquitecto</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/ToyOrnithopter.webp" alt="ToyOrnithopter">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/ToyOrnithopter.webp" alt="ToyOrnithopter"><br><br>
+                        <strong>Toy Ornithopter</strong><br><br>
+                        <br>Cuando utilices una poción, cura 5 hp.<br><br>
+                        <em>Este pequeño juguete es el perfecto compañero en las aventuras solitarias.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Vajra.webp" alt="Vajra">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Vajra.webp" alt="Vajra"><br><br>
+                        <strong>Vajra</strong><br><br>
+                        <br>Al comienzo de cada combate gana 1 de fuerza.<br><br>
+                        <em>Una reliquia ornamental concedida a los guerreros que encontraban la gloria en combate.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/WarPaint.webp" alt="WarPaint">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/WarPaint.webp" alt="WarPaint"><br><br>
+                        <strong>War Paint</strong><br><br>
+                        <br>Al recogerla mejoras 2 cartas de habilidad aleatorias.<br><br>
+                        <em>En el pasado los ironclads creaban guardas mágicas usando pintura de guerra encantada antes de cargar a la batalla.</em><br><br>
+                    </span>
+                </div>
+
+                <div class="reliquia">
+                    <img src="../img/reliquias/Whetstone.webp" alt="Whetstone">
+                    <span class="reliquia-texto">
+                        <img src="../img/reliquias/Whetstone.webp" alt="Whetstone"><br><br>
+                        <strong>Whetstone</strong><br><br>
+                        <br>Al recogerla mejoras 2 cartas de ataque aleatorias.<br><br>
+                        <em>"La carne nunca vence al metal."- <br>Kublai El Grande</em><br><br>
+                    </span>
+                </div>
+            </div>
+            <div class="column">
+    
+            </div>
+        </div>
+    </div>
+    
+    
+    
     <div style="width: 100%; height: 1px; background-color: white;"></div>
     <footer>
         <div class="about">
             <h3>Sobre Mi</h3>
         </div>
-
+        
         <div>
             <h3>Contacto</h3>
             <ul>
@@ -31,7 +433,7 @@
                 <li>jimenezmu@esat-alumni.com</li>
             </ul>
         </div>
-
+        
         <div class="social">
             <h3>Redes</h3>
             <ul>
@@ -54,8 +456,7 @@
                 <td><a href="../paginas/personajes.html">Personajes</a></td>
                 <td><a href="../paginas/cartas.html">Cartas</a></td>
                 <td><a href="../paginas/objetos.html">Objetos</a></td>
-                <td><a href="../paginas/bosses.html">Bosses</a></td>
-                <td><a href="../paginas/eventos.html">Eventos</a></td>
+                <td><a href="../paginas/entorno.html">Entorno</a></td>
             </tr>
         </table>
     </nav>

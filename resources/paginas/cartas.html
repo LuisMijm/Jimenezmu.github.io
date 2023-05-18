@@ -21,7 +21,8 @@
 
         .container {
             position: relative;
-            margin-top: 10%;
+            margin-top: 20%;
+            margin-bottom: 10%;
             margin-left: 9.75%;
             width: 80%;
         }
@@ -32,7 +33,20 @@
             /* background-color: #CFA53C; */
             background-image: url(../img/backgrounds/backgound_fire8.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 100%;
+            border-radius: 20px;
+            margin-left: 5%;
+            width: 90%;
+            padding-bottom: 5%;
+            padding-top: 5%;
+            margin-bottom: 1%;
+            /* border: 1px solid white; */
+
+
+        }
+        
+        .mySlides img {
+            width: 15%;
         }
 
         .cursor {
@@ -43,7 +57,7 @@
         .next {
             cursor: pointer;
             position: absolute;
-            top: 40%;
+            top: 15%;
             width: auto;
             padding: 16px;
             margin-top: -50px;
@@ -53,6 +67,7 @@
             border-radius: 0 3px 3px 0;
             user-select:  none;
             -webkit-user-select: none;
+            border: 1px solid white;
         }
 
         .next {
@@ -71,6 +86,7 @@
             padding: 8px 12px;
             position: absolute;
             top: 0;
+            border: 1px solid white;
         }
 
         .caption-container {
@@ -78,23 +94,38 @@
             background-color: #222;
             padding: 2px 16px;
             color: white;
+            border-radius: 20px;
+        }
+        
+        .row {
+            border-radius: 20px;
+            padding-top: 3%;
+            padding-bottom: 3%;
         }
 
         .row:after {
             content: "";
             display: table;
             clear: both;
+
         }
 
         .column {
             float: left;
             width: 16.66%;
             text-align: center;
-
+            margin-bottom: 2%;
         }
 
         .demo {
             opacity: 0.6;
+            width: 50%;
+            /* background-color: #CFA53C; */
+            /* border: 1px solid white; */
+            border-radius: 20px;
+            /* padding-top: 1%; */
+            /* padding-bottom: 1%; */
+            padding: 2%;
         }
 
         .active, 
@@ -109,200 +140,200 @@
 
 
     <div class="container">
-
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
         <!-- ironclad cards -->
         <div class="mySlides">
             <div class="numbertext"> 1 / 36 </div>
-            <img src="../img/cards/ironclad/Bash.webp" style="width: 30%;">
+            <img src="../img/cards/ironclad/Bash.webp" >
         </div>    
 
         <div class="mySlides">
             <div class="numbertext"> 2 / 36 </div>
-            <img src="../img/cards/ironclad/Defend_R.webp" style="width: 30%;">
+            <img src="../img/cards/ironclad/Defend_R.webp" >
         </div>
 
         <div class="mySlides">
             <div class="numbertext"> 3 / 36 </div>
-            <img src="../img/cards/ironclad/Strike_R.webp" style="width: 30%;">
+            <img src="../img/cards/ironclad/Strike_R.webp" >
         </div>
 
         <div class="mySlides">
             <div class="numbertext"> 4 / 36 </div>
-            <img src="../img/cards/ironclad/Anger.webp" style="width: 30%;">
+            <img src="../img/cards/ironclad/Anger.webp" >
         </div>
 
         <div class="mySlides">
             <div class="numbertext"> 5 / 36 </div>
-            <img src="../img/cards/ironclad/Armaments.webp" style="width: 30%;">
+            <img src="../img/cards/ironclad/Armaments.webp" >
         </div>
 
         <div class="mySlides">
             <div class="numbertext"> 6 / 36 </div>
-            <img src="../img/cards/ironclad/BodySlam.webp" style="width: 30%;">
+            <img src="../img/cards/ironclad/BodySlam.webp" >
         </div>
 
         
         <!-- silent cards -->
         <div class="mySlides">
             <div class="numbertext"> 7 / 36 </div>
-            <img src="../img/cards/silent/Defend_G.webp" style="width: 30%;">
+            <img src="../img/cards/silent/Defend_G.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 8 / 36 </div>
-            <img src="../img/cards/silent/Neutralize.webp" style="width: 30%;">
+            <img src="../img/cards/silent/Neutralize.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 9 / 36 </div>
-            <img src="../img/cards/silent/Strike_G.webp" style="width: 30%;">
+            <img src="../img/cards/silent/Strike_G.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 10 / 36 </div>
-            <img src="../img/cards/silent/Survivor.webp" style="width: 30%;">
+            <img src="../img/cards/silent/Survivor.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 11 / 36 </div>
-            <img src="../img/cards/silent/Acrobatics.webp" style="width: 30%;">
+            <img src="../img/cards/silent/Acrobatics.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 12 / 36 </div>
-            <img src="../img/cards/silent/Backflip.webp" style="width: 30%;">
+            <img src="../img/cards/silent/Backflip.webp" >
         </div>
 
 
         <!-- defect cards -->
         <div class="mySlides">
             <div class="numbertext"> 13 / 36 </div>
-            <img src="../img/cards/defect/Defend_B.webp" style="width: 30%;">
+            <img src="../img/cards/defect/Defend_B.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 14 / 36 </div>
-            <img src="../img/cards/defect/Dualcast.webp" style="width: 30%;">
+            <img src="../img/cards/defect/Dualcast.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 15 / 36 </div>
-            <img src="../img/cards/defect/Strike_B.webp" style="width: 30%;">
+            <img src="../img/cards/defect/Strike_B.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 16 / 36 </div>
-            <img src="../img/cards/defect/Zap.webp" style="width: 30%;">
+            <img src="../img/cards/defect/Zap.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 17 / 36 </div>
-            <img src="../img/cards/defect/BallLightning.webp" style="width: 30%;">
+            <img src="../img/cards/defect/BallLightning.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 18 / 36 </div>
-            <img src="../img/cards/defect/Barrage.webp" style="width: 30%;">
+            <img src="../img/cards/defect/Barrage.webp" >
         </div>
 
 
         <!-- watcher cards -->
         <div class="mySlides">
             <div class="numbertext"> 19 / 36 </div>
-            <img src="../img/cards/watcher/Defend_P.webp" style="width: 30%;">
+            <img src="../img/cards/watcher/Defend_P.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 20 / 36 </div>
-            <img src="../img/cards/watcher/Eruption.webp" style="width: 30%;">
+            <img src="../img/cards/watcher/Eruption.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 21 / 36 </div>
-            <img src="../img/cards/watcher/Strike_P.webp" style="width: 30%;">
+            <img src="../img/cards/watcher/Strike_P.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 22 / 36 </div>
-            <img src="../img/cards/watcher/Vigilance.webp" style="width: 30%;">
+            <img src="../img/cards/watcher/Vigilance.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 23 / 36 </div>
-            <img src="../img/cards/watcher/BowlingBash.webp" style="width: 30%;">
+            <img src="../img/cards/watcher/BowlingBash.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 24 / 36 </div>
-            <img src="../img/cards/watcher/Consecrate.webp" style="width: 30%;">
+            <img src="../img/cards/watcher/Consecrate.webp" >
         </div>
 
 
         <!-- colorless cards -->
         <div class="mySlides">
             <div class="numbertext"> 25 / 36 </div>
-            <img src="../img/cards/colorless/BandageUp.webp" style="width: 30%;">
+            <img src="../img/cards/colorless/BandageUp.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 26 / 36 </div>
-            <img src="../img/cards/colorless/Blind.webp" style="width: 30%;">
+            <img src="../img/cards/colorless/Blind.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 27 / 36 </div>
-            <img src="../img/cards/colorless/DarkShackles.webp" style="width: 30%;">
+            <img src="../img/cards/colorless/DarkShackles.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 28 / 36 </div>
-            <img src="../img/cards/colorless/DeepBreath.webp" style="width: 30%;">
+            <img src="../img/cards/colorless/DeepBreath.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 29 / 36 </div>
-            <img src="../img/cards/colorless/Discovery.webp" style="width: 30%;">
+            <img src="../img/cards/colorless/Discovery.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 30 / 36 </div>
-            <img src="../img/cards/colorless/DramaticEntrance.webp" style="width: 30%;">
+            <img src="../img/cards/colorless/DramaticEntrance.webp" >
         </div>
 
 
         <!-- curse cards -->
         <div class="mySlides">
             <div class="numbertext"> 31 / 36 </div>
-            <img src="../img/cards/curse/AscendersBane.webp" style="width: 30%;">
+            <img src="../img/cards/curse/AscendersBane.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 32 / 36 </div>
-            <img src="../img/cards/curse/Clumsy.webp" style="width: 30%;">
+            <img src="../img/cards/curse/Clumsy.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 33 / 36 </div>
-            <img src="../img/cards/curse/CurseoftheBell.webp" style="width: 30%;">
+            <img src="../img/cards/curse/CurseoftheBell.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 34 / 36 </div>
-            <img src="../img/cards/curse/Decay.webp" style="width: 30%;">
+            <img src="../img/cards/curse/Decay.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 35 / 36 </div>
-            <img src="../img/cards/curse/Doubt.webp" style="width: 30%;">
+            <img src="../img/cards/curse/Doubt.webp" >
         </div>
         
         <div class="mySlides">
             <div class="numbertext"> 36 / 36 </div>
-            <img src="../img/cards/curse/Injury.webp" style="width: 30%;">
+            <img src="../img/cards/curse/Injury.webp" >
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+
 
         <div class="caption-container">
             <p id="caption"></p>
@@ -312,191 +343,191 @@
              <!-- ironclad cards -->
             <div class="column">
                 <img class="demo cursor" src="../img/cards/ironclad/Bash.webp"
-                style="width: 70%" onclick="currentSlide(1)" alt="Bash">
+                onclick="currentSlide(1)" alt="Bash">
             </div>
 
             <div class="column">
                 <img class="demo cursor" src="../img/cards/ironclad/Defend_R.webp" 
-                style="width: 70%" onclick="currentSlide(2)" alt="Defend">
+                onclick="currentSlide(2)" alt="Defend">
             </div>
 
             <div class="column">
                 <img class="demo cursor" src="../img/cards/ironclad/Strike_R.webp" 
-                style="width: 70%" onclick="currentSlide(3)" alt="Strike">
+                onclick="currentSlide(3)" alt="Strike">
             </div>
 
             <div class="column">
                 <img class="demo cursor" src="../img/cards/ironclad/Anger.webp" 
-                style="width: 70%" onclick="currentSlide(4)" alt="Anger">
+                onclick="currentSlide(4)" alt="Anger">
             </div>
 
             <div class="column">
                 <img class="demo cursor" src="../img/cards/ironclad/Armaments.webp" 
-                style="width: 70%" onclick="currentSlide(5)" alt="Armaments">
+                onclick="currentSlide(5)" alt="Armaments">
             </div>
 
             <div class="column">
                 <img class="demo cursor" src="../img/cards/ironclad/BodySlam.webp" 
-                style="width: 70%" onclick="currentSlide(6)" alt="Body Slam">
+                onclick="currentSlide(6)" alt="Body Slam">
             </div>
 
 
             <!-- silent cards -->
             <div class="column">
-                <img class="demo cursor" src="../img/cards/silent/Defend_G.webp" style="width: 70%" onclick="currentSlide(7)"
+                <img class="demo cursor" src="../img/cards/silent/Defend_G.webp" onclick="currentSlide(7)"
                     alt="Defend">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/silent/Neutralize.webp" style="width: 70%" onclick="currentSlide(8)"
+                <img class="demo cursor" src="../img/cards/silent/Neutralize.webp" onclick="currentSlide(8)"
                     alt="Neutralize">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/silent/Strike_G.webp" style="width: 70%" onclick="currentSlide(9)"
+                <img class="demo cursor" src="../img/cards/silent/Strike_G.webp" onclick="currentSlide(9)"
                     alt="Strike">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/silent/Survivor.webp" style="width: 70%" onclick="currentSlide(10)"
+                <img class="demo cursor" src="../img/cards/silent/Survivor.webp" onclick="currentSlide(10)"
                     alt="Survivor">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/silent/Acrobatics.webp" style="width: 70%" onclick="currentSlide(11)"
+                <img class="demo cursor" src="../img/cards/silent/Acrobatics.webp" onclick="currentSlide(11)"
                     alt="Acrobatics">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/silent/Backflip.webp" style="width: 70%" onclick="currentSlide(12)"
+                <img class="demo cursor" src="../img/cards/silent/Backflip.webp" onclick="currentSlide(12)"
                     alt="Backflip">
             </div>
 
 
             <!-- defect cards -->
             <div class="column">
-                <img class="demo cursor" src="../img/cards/defect/Defend_B.webp" style="width: 70%" onclick="currentSlide(13)"
+                <img class="demo cursor" src="../img/cards/defect/Defend_B.webp" onclick="currentSlide(13)"
                     alt="Defend">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/defect/Dualcast.webp" style="width: 70%" onclick="currentSlide(14)"
+                <img class="demo cursor" src="../img/cards/defect/Dualcast.webp" onclick="currentSlide(14)"
                     alt="Dualcast">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/defect/Strike_B.webp" style="width: 70%" onclick="currentSlide(15)"
+                <img class="demo cursor" src="../img/cards/defect/Strike_B.webp" onclick="currentSlide(15)"
                     alt="Strike">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/defect/Zap.webp" style="width: 70%" onclick="currentSlide(16)"
+                <img class="demo cursor" src="../img/cards/defect/Zap.webp" onclick="currentSlide(16)"
                     alt="Zap">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/defect/BallLightning.webp" style="width: 70%" onclick="currentSlide(17)"
+                <img class="demo cursor" src="../img/cards/defect/BallLightning.webp" onclick="currentSlide(17)"
                     alt="Ball Lightning">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/defect/Barrage.webp" style="width: 70%" onclick="currentSlide(18)"
+                <img class="demo cursor" src="../img/cards/defect/Barrage.webp" onclick="currentSlide(18)"
                     alt="Barrage">
             </div>
 
 
             <!-- watcher cards -->
             <div class="column">
-                <img class="demo cursor" src="../img/cards/watcher/Defend_P.webp" style="width: 70%" onclick="currentSlide(19)"
+                <img class="demo cursor" src="../img/cards/watcher/Defend_P.webp" onclick="currentSlide(19)"
                     alt="Defend">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/watcher/Eruption.webp" style="width: 70%" onclick="currentSlide(20)"
+                <img class="demo cursor" src="../img/cards/watcher/Eruption.webp" onclick="currentSlide(20)"
                     alt="Eruption">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/watcher/Strike_P.webp" style="width: 70%" onclick="currentSlide(21)"
+                <img class="demo cursor" src="../img/cards/watcher/Strike_P.webp" onclick="currentSlide(21)"
                     alt="Strike">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/watcher/Vigilance.webp" style="width: 70%" onclick="currentSlide(22)"
+                <img class="demo cursor" src="../img/cards/watcher/Vigilance.webp" onclick="currentSlide(22)"
                     alt="Vigilance">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/watcher/BowlingBash.webp" style="width: 70%" onclick="currentSlide(23)"
+                <img class="demo cursor" src="../img/cards/watcher/BowlingBash.webp" onclick="currentSlide(23)"
                     alt="Bowling Bash">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/watcher/Consecrate.webp" style="width: 70%" onclick="currentSlide(24)"
+                <img class="demo cursor" src="../img/cards/watcher/Consecrate.webp" onclick="currentSlide(24)"
                     alt="Consecrate">
             </div>
 
 
             <!-- colorless cards -->
             <div class="column">
-                <img class="demo cursor" src="../img/cards/colorless/BandageUp.webp" style="width: 70%" onclick="currentSlide(25)"
+                <img class="demo cursor" src="../img/cards/colorless/BandageUp.webp" onclick="currentSlide(25)"
                     alt="Bandage Up">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/colorless/Blind.webp" style="width: 70%" onclick="currentSlide(26)"
+                <img class="demo cursor" src="../img/cards/colorless/Blind.webp" onclick="currentSlide(26)"
                     alt="Blind">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/colorless/DarkShackles.webp" style="width: 70%" onclick="currentSlide(27)"
+                <img class="demo cursor" src="../img/cards/colorless/DarkShackles.webp" onclick="currentSlide(27)"
                     alt="Dark Shackles">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/colorless/DeepBreath.webp" style="width: 70%" onclick="currentSlide(28)"
+                <img class="demo cursor" src="../img/cards/colorless/DeepBreath.webp" onclick="currentSlide(28)"
                     alt="Deep Breath">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/colorless/Discovery.webp" style="width: 70%" onclick="currentSlide(29)"
+                <img class="demo cursor" src="../img/cards/colorless/Discovery.webp" onclick="currentSlide(29)"
                     alt="Discovery">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/colorless/DramaticEntrance.webp" style="width: 70%" onclick="currentSlide(30)"
+                <img class="demo cursor" src="../img/cards/colorless/DramaticEntrance.webp" onclick="currentSlide(30)"
                     alt="Dramatic Entrance">
             </div>
 
 
             <!-- curse cards -->
             <div class="column">
-                <img class="demo cursor" src="../img/cards/curse/AscendersBane.webp" style="width: 70%" onclick="currentSlide(31)"
+                <img class="demo cursor" src="../img/cards/curse/AscendersBane.webp" onclick="currentSlide(31)"
                     alt="Ascender's Bane">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/curse/Clumsy.webp" style="width: 70%" onclick="currentSlide(32)"
+                <img class="demo cursor" src="../img/cards/curse/Clumsy.webp" onclick="currentSlide(32)"
                     alt="Clumsy">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/curse/CurseoftheBell.webp" style="width: 70%" onclick="currentSlide(33)"
+                <img class="demo cursor" src="../img/cards/curse/CurseoftheBell.webp" onclick="currentSlide(33)"
                     alt="Curse of the Bell">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/curse/Decay.webp" style="width: 70%" onclick="currentSlide(34)"
+                <img class="demo cursor" src="../img/cards/curse/Decay.webp" onclick="currentSlide(34)"
                     alt="Decay">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/curse/Doubt.webp" style="width: 70%" onclick="currentSlide(35)"
+                <img class="demo cursor" src="../img/cards/curse/Doubt.webp" onclick="currentSlide(35)"
                     alt="Doubt">
             </div>
             
             <div class="column">
-                <img class="demo cursor" src="../img/cards/curse/Injury.webp" style="width: 70%" onclick="currentSlide(36)"
+                <img class="demo cursor" src="../img/cards/curse/Injury.webp" onclick="currentSlide(36)"
                     alt="Injury">
             </div>
         </div>
@@ -577,8 +608,7 @@
                 <td><a href="../paginas/personajes.html">Personajes</a></td>
                 <td><a href="../paginas/cartas.html">Cartas</a></td>
                 <td><a href="../paginas/objetos.html">Objetos</a></td>
-                <td><a href="../paginas/bosses.html">Bosses</a></td>
-                <td><a href="../paginas/eventos.html">Eventos</a></td>
+                <td><a href="../paginas/entorno.html">Entorno</a></td>
             </tr>
         </table>
     </nav>

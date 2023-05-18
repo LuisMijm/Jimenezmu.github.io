@@ -20,26 +20,33 @@
 
         div.container0 {
             position: relative;
-            display: flex;
+            display:block;
             flex-direction: column;
             flex-wrap:nowrap;
-            top: 100px;
+            /* top: 10%; */
             /* grid-template-columns: repeat(auto-fit, minmax(20%, 1fr)); */
             /* height:fit-content; */
             /* border: 2px solid white; */
-            height: 100%;
+            width: 80%;
+            /* height: 100%; */
+            margin-top: 10%;
+            margin-bottom: 10%;
+            /* border: 1px solid #CFA53C; */
+            text-align: center;
+            margin-left: 10%;
         }
 
         div.container1 {
             display:flex;
-            width: 100%;
-            height:auto;
+            /* width: 100%; */
+            height:30%;
             color: black;
             text-align: center;
             position: relative;
             border-top: 10px solid black;
             border-bottom: 10px solid black;
             /* border-spacing: 0px 10px; */
+
         }
 
         div.container2-left {
@@ -118,6 +125,15 @@
             align-items: center;
             display:flexbox;
         }
+
+        .character-info-inner {
+            align-items: center; 
+            display: flex; 
+            justify-content: center; 
+            margin-left: 6%; 
+            margin-right: 7%;
+        }
+
     </style>
 </head>
 
@@ -129,7 +145,7 @@
     <div class="container0">
         <div class="container1">
             <div class="container2-left">
-                <div style="margin-top: 40px; margin-bottom: 40px;">
+                <div style="margin-top: 40px; margin-bottom: 40px; color: white;">
                     The guardian
                 </div>
                 <div class="container3">
@@ -138,16 +154,49 @@
             </div>
 
             <div class="character-info-right">
-                <div style="align-items: center; display: flex; justify-content: center;">
-                    asdlfjasdlkfjasdljfl    
+                <div class="character-info-inner">
+                    <br>
+                    <div style="margin-right: 9%; ">
+                        <strong > El último soldado de los Ironclads. <br> Vendió su alma para cosechar energia demoníaca </strong>
+                    </div>
+
+                    <div style="margin: 6%; margin-left: 5%;">
+                        
+                        Ironclad porta un arsenal de armas de golpe poderosas, cuenta con formidables opciones
+                        defensivas y obtiene fuerza diabólica de sus benefactores demoníacos para potenciarse
+                        a si mismo. <br><br>
+                        
+                        Comienza con 80hp, la mayor cantidad de vida entre los personajes, y puede manipular 
+                        la habilidad Exhaust, para enviar las cartas al exilio de donde pueden ser recuperadas.<br><br>
+                        
+                        Ironclad comienza con la reliquia Burning Blood, que regenera 6hp despues de cada combate.<br><br>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container1">
-            <div class="character-info-left"></div>
+            <div class="character-info-left">
+                <div class="character-info-inner">
+                    <div style="margin: 4%; margin-left: 5%; color: whi;">
+                        
+                        Silent es una cazadora con cartas de picaro de fantasía. <br><br>
+                        Este astuto personaje debilita a sus enemigos con numerosos cortes y envenamientos, mientras se 
+                        vale de trucos y artimañas para esquivar golpes. <br><br>
+                        
+                        Comienza con 70hp, utiliza poderosas cartas de robo y descarte para asegurarse de estar siempre 
+                        un paso por delante de sus enemigos. <br><br>
+                        
+                        Silent comienzo con la reliquia Ring of the Snake, que le permite robar dos cartas adicionales 
+                        al comienzo de cada combate. <br><br>
+                    </div>
+                    <div style="margin-left: 9%;">
+                        <strong> Una cazadora mortal de las tierras de la niebla. Erradica a sus enemigos con dagas y veneno </strong> <br><br><br>
+                    </div>
+                </div>
+            </div>
             <div class="container2-right">
-                <div style="margin-top: 40px; margin-bottom: 40px;">
+                <div style="margin-top: 40px; margin-bottom: 40px; color: white;">
                     Silent
                 </div>
 
@@ -159,20 +208,62 @@
 
         <div class="container1">
             <div class="container2-left">
-                <div style="margin-top: 40px; margin-bottom: 40px;">
+                <div style="margin-top: 40px; margin-bottom: 40px; color: white;">
                     Defect
                 </div>
                 <div class="container3">
                     <img class="character-portrait-left" src="../img/characters/Defect.webp">  
                 </div>
             </div>
-            <div class="character-info-right"></div>
+            <div class="character-info-right">
+                <div class="character-info-inner">
+                    <br>
+                    <div style="margin-right: 9%;">
+                        <strong> Automata de combate que se volvió consciente de sí mismo. <br> La tecnología antigua le permite manipular los orbes </strong>
+                    </div>
+
+                    <div style="margin: 4%; margin-left: 5%;">
+                        Antaño vivió entre caminadores de orbes y automatas de bronce como uno de ellos, con el paso del
+                        tiempo adquirió autoconsciencia y desde entonces busca la forma de salir de "La Torre".
+                        <br><br>
+                        Ataca a sus enemigos con un arsenal de alta técnología, poderes y evocaciones elementales. 
+                        <br><br>
+                        Defect posee una mecánica única; los orbes. Mediante cartas y reliquias, Defect canaliza estas 
+                        esferas elementales en sus ranuras de orbe, activando sus efectos pasivos cada turno o evocándolos
+                        para destruirlos y exprimir toda su energía de un solo golpe.
+                        <br><br>
+                        Defect comienza con 75hp y tres ranuras de orbe, pero puede obtener mas o perder algunas 
+                        usando cartas y reliquias. 
+                        <br><br>
+                        La reliquia inicial que porta es "Cracked Core" que le otorga un orbe de rayo al comienzo de cada combate.
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <div class="container1">
-            <div class="character-info-left"></div>
+            <div class="character-info-left">
+                <div class="character-info-inner">
+                    <div style="margin: 4%; margin-left: 5%;">
+                        Una monje que utiliza los efectos de sus posturas a su favor.
+                        <br><br>
+                        Cuenta con un arsenal orientado al control de su mazo mediante "la adivinación", retención y generación
+                        de energía, asi como la creación de nuevas cartas en mitad del combate.
+                        <br><br>
+                        Comienza la ascensión con 72hp
+                        <br><br>
+                        Su reliquia inicial "Pure water" añade un "milagro" (aumenta la energia en 1 este turno) a tu mano al comienzo de cada
+                        combate.
+                    </div>
+                    <div style="margin-left: 9%;">
+                        <strong> Una asceta ciega que ha venido a evaluar "La Torre". Conocidad como la maestra de las posturas divinas</strong>
+                    </div>
+                </div>
+
+            </div>
             <div class="container2-right">
-                <div style="margin-top: 40px; margin-bottom: 40px;">
+                <div style="margin-top: 40px; margin-bottom: 40px; color: white;">
                     Watcher
                 </div>
                 <div class="container3">
@@ -182,8 +273,8 @@
         </div>
     </div>
 
-<div style="width: 100%; height: 1px; background-color: white;"></div>
 
+<div style="width: 100%; height: 1px; background-color: white;"></div>
 <footer>
     <div class="about">
         <h3>Sobre Mi</h3>
@@ -220,8 +311,7 @@
                 <td><a href="../paginas/personajes.html">Personajes</a></td>
                 <td><a href="../paginas/cartas.html">Cartas</a></td>
                 <td><a href="../paginas/objetos.html">Objetos</a></td>
-                <td><a href="../paginas/bosses.html">Bosses</a></td>
-                <td><a href="../paginas/eventos.html">Eventos</a></td>
+                <td><a href="../paginas/entorno.html">Entorno</a></td>
             </tr>
         </table>
     </nav>
