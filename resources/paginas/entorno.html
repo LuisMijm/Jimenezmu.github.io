@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Miguel Jimenez Muñoz.">
+    <meta name="owner" content="Luis Miguel Jimenez Muñoz.">
+
+    <!-- icono -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <!-- estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Titulo -->
+    <title> Entorno | Slay The Spyre </title>
+
+    <style>
+
+        .flip-box-container0 {
+            margin-top: 20%;
+            width: 80%;
+            height: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            margin: 0 auto;
+            margin-top: 10%;
+        }
+
+        .flip-box-container1{
+            /* width: 30%; */
+            min-width: 30%;
+            height: 20%;
+            border: 5px solid #CFA53C;
+            background-color: transparent;
+            text-align: center;
+
+        }
+
+        .name {
+            font-size: 20px;
+        }
+
+        .division {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+
+        .flip-box {
+            width: 100%;
+            height: 89.3%;
+            padding-top: -5%;
+            padding-bottom: -5%;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box-front , .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            background-color: white;
+        }
+
+        .flip-box-front {
+            /* background-color: #CFA53C; */
+        }   
+
+        .flip-box-back {
+            /* background-color: #CFA53C; */
+            transform: rotateY(180deg);
+        }
+ 
+
+        .flip-box:hover .flip-box-inner{
+            transform: rotateY(180deg);
+        }
+
+        .front-img {
+            padding-top: 5%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="flip-box-container0">
+        <!-- slime -->
+        <div class="flip-box-container1">
+            <div class="name"> Slime Boss </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Slimebossicon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/Slime-boss-pretty.webp" style="width:40%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guardian -->
+        <div class="flip-box-container1">
+            <div class="name"> The Guardian </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Guardianicon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/The-guardian-atk-pretty.webp" style="width:40%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hexaghost -->
+        <div class="flip-box-container1">
+            <div class="name"> Hexaghost </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Hexaghosticon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/Hexaghost.webp" style="width:30%; height: auto; margin-top: 5%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Automaton -->
+        <div class="flip-box-container1">
+            <div class="name"> Bronze Automaton </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Bronzeautomatonicon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/Bronze-automoton-pretty.webp" style="width:35%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Champ -->
+        <div class="flip-box-container1">
+            <div class="name"> The Champ </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Champicon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/Champ.webp" style="width:35%; height: auto; margin-top: 2%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collector -->
+        <div class="flip-box-container1">
+            <div class="name"> The Collector </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Collectoricon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/TheCollector.webp" style="width:30%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Awakened -->
+        <div class="flip-box-container1">
+            <div class="name"> Awakened One </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Awakenedoneicon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/Awakened-one-zzz-pretty.webp" style="width:40%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Time eater -->
+        <div class="flip-box-container1">
+            <div class="name"> Time Eater </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Timeeatericon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/Time-eater-pretty.webp" style="width:40%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deca -->
+        <div class="flip-box-container1">
+            <div class="name"> Donu and Deca </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/Donudecaicon.webp" alt="Slimebossicon" class="front-img">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/Deca.webp" style="width: 35%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Corrupt Heart -->
+        <div class="flip-box-container1">
+            <div class="name"> Corrupt Heart </div>
+            <div class="division"></div>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../img/bosses/CorruptHeartIcon.webp" alt="Slimebossicon" class="front-img" style="width: 35%; height: auto;">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../img/bosses/CorruptHeart.webp" style="width: 30%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Pie de página -->
+    <div style="width: 100%; height: 1px; background-color: white;"></div>
+    <footer>
+        <div class="about">
+            <h3>Sobre Mi</h3>
+        </div>
+
+        <div>
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="./resources/paginas/formulario.html">contactar</a> </li>
+                <li><a href="./resources/paginas/politica.html"> Politica de privacidad</a></li>
+                <li>jimenezmu@esat-alumni.com</li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <h3>Redes</h3>
+            <ul>
+                <li><a href="#"></i></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+
+        <div class="copy">
+            &copy; 2023
+        </div>
+    </footer>
+
+    <!-- Barra superior -->
+    <nav class="navbar">
+        <table class="menu-bar">
+            <tr class="menu-tr">
+                <td><a href="../../index.html"><img width="25%" height="25%" src="../img/slay_the_spire_logo3.png"></a>
+                </td>
+                <td><a href="../paginas/personajes.html">Personajes</a></td>
+                <td><a href="../paginas/cartas.html">Cartas</a></td>
+                <td><a href="../paginas/objetos.html">Objetos</a></td>
+                <td><a href="../paginas/entorno.html">Entorno</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <script src="../../proyecto.js"></script>
+</body>
+
+</html>
