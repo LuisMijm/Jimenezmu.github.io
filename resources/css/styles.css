@@ -138,6 +138,39 @@
     cursor: pointer;
   }
 
+  .intro-div {
+    width: 80%;
+    /* min-height: 490px; */
+    min-height: 51%;
+    margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 16%;
+
+    padding: 10%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+
+    text-align: center;
+    color: white;
+    background-color: #CFA53C;
+    border-radius: 0%;
+    background-image: url(../img/slay_the_spire-intro-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .intro-title {
+      font-size: 50px; 
+      padding-bottom: 5%;
+  }
+
+  .intro-text {
+      background-color: rgba(207,165, 60, 0.7);
+      font-size: 20px;
+      padding: 4%;
+  }
+
   .text {
     background-color: black;
     color: white;
@@ -285,13 +318,26 @@
     /* display: flex; */
     text-decoration: none;
     width: 100%;
+    min-width: ;
   }
 
   footer > div {
     display: inline-block;
-    width: 30%;
+    width: 200px;
     margin: 20px;
     vertical-align: top;
+  }
+
+  footer > div > a {
+    color: #C1C23B;
+  }
+
+  .about > a, .social > a, .contact > a{
+    color: #C1C23B;
+  }
+
+  .contact {
+    width: 400px;
   }
 
   div.copy {
@@ -383,6 +429,12 @@
       padding: 8px 20px;
       font-size: 14px;
     }
+
+    .navbar {
+      font-size: 30px;
+    }
+
+
   }
 
   /*Tablet*/
@@ -390,6 +442,9 @@
     #button button {
       padding: 12px 25px;
       font-size: 18px;
+    }
+    .intro-div{
+      min-height: 73%;
     }
   }
 

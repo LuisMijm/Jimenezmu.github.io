@@ -19,9 +19,39 @@
             vertical-align: middle;
         }
 
+        /* .intro-div {
+            width: 80%;
+            margin: 10%;
+            margin-top: 10%;
+            margin-bottom: 0%;
+
+            padding: 10%;
+            padding-top: 3%;
+            padding-bottom: 5%;
+
+            text-align: center;
+            color: white;
+            background-color: #CFA53C;
+            border-radius: 0%;
+            background-image: url(../img/slay_the_spire-intro-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .intro-title {
+            font-size: 50px; 
+            padding-bottom: 5%;
+        }
+
+        .intro-text {
+            background-color: rgba(207,165, 60, 0.7);
+            font-size: 20px;
+            padding: 4%;
+        } */
+
         .container {
             position: relative;
-            margin-top: 20%;
+            margin-top: 10%;
             margin-bottom: 10%;
             margin-left: 9.75%;
             width: 80%;
@@ -137,7 +167,16 @@
 </head>
 <body>
 
-
+    <div class="intro-div">
+        <div class="intro-title"> Cartas </div>
+        <div class="intro-text">
+            Slay The Spire es un juego de gestion de mazos, por lo que, al avanzar, encontraremos cartas frecuentemente 
+            para agregar a las que ya teníamos. <br> <br>
+            Existen varios tipos de cartas; 
+            incoloras y maldiciones, que pueden obtener todos los personajes, y provocarán efectos positvos las primeras y 
+            negativos las segundas. Y cartas de color (rojo, verde, azul y morado) específicas para cada clase. 
+        </div>
+    </div>
 
     <div class="container">
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -571,31 +610,27 @@
 
     
     <div style="width: 100%; height: 1px; background-color: white;"></div>
-    
     <footer>
         <div class="about">
             <h3>Sobre Mi</h3>
+            Web academica realizada por <a href="../paginas/cv.html" target="_blank"> luis Miguel Jiménez</a>.
         </div>
     
-        <div>
+        <div class="contact">
             <h3>Contacto</h3>
-            <ul>
-                <li><a href="./resources/paginas/formulario.html">contactar</a> </li>
-                <li><a href="./resources/paginas/politica.html"> Politica de privacidad</a></li>
-                <li>jimenezmu@esat-alumni.com</li>
-            </ul>
+            puedes contactarme a través de mi correo electrónico jimenezmu@esat-alumni.com o mediante <a
+                href="../paginas/formulario.html">este formulario</a>.
         </div>
     
         <div class="social">
             <h3>Redes</h3>
-            <ul>
-                <li><a href="#"></i></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+            <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/" target="_blank"><img src="../img/vapor.png"
+                    alt="steam"></a>
+    
         </div>
     
         <div class="copy">
-            &copy; 2023
+            &copy; web académica 2023
         </div>
     </footer>
     
@@ -606,9 +641,9 @@
                 <td><a href="../../index.html"><img width="25%" height="25%" src="../img/slay_the_spire_logo3.png"></a>
                 </td>
                 <td><a href="../paginas/personajes.html">Personajes</a></td>
-                <td><a href="../paginas/cartas.html">Cartas</a></td>
+                <td><a href="../paginas/cartas.html"  style="color: #CFA53C;">Cartas</a></td>
                 <td><a href="../paginas/objetos.html">Objetos</a></td>
-                <td><a href="../paginas/entorno.html">Entorno</a></td>
+                <td><a href="../paginas/enemigos.html">Enemigos</a></td>
             </tr>
         </table>
     </nav>
